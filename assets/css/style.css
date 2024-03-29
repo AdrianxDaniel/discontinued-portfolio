@@ -1,0 +1,45 @@
+/* 
+ASTERISKS (*)are for all elements, 
+ELEMENTS (body) targets specific elements, all if multiple, 
+DOTS (.) are for classes, 
+HASHTAGS (#) are for ID's 
+ */
+
+:root {
+  --backgroundColor: black;
+  --color: white;
+  --borderColor: orangered;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, gray, white);
+}
+
+header nav {
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  height: 260px;
+  border-radius: 100px;
+  background-color: black;
+  border: 5px solid var(--borderColor);
+  color: var(--color);
+}
+
+ul {
+  list-style: none;
+  padding: 0%;
+}
+
+li {
+ display: inline-flex;
+ margin-right: 80px;
+  font-size: 25px;
+}
