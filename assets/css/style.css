@@ -5,41 +5,66 @@ DOTS (.) are for classes,
 HASHTAGS (#) are for ID's 
  */
 
-:root {
-  --backgroundColor: black;
-  --color: white;
-  --borderColor: orangered;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
+  width: 100vw;
+  height: 100%;
+}
+
+main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  background: linear-gradient(to bottom, gray, white);
+  justify-content: center;
 }
 
-header nav {
-  text-align: center;
+.btn {
+  background-color: silver;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+hr {
+  color: silver;
+}
+
+main {
+  background: linear-gradient(black, silver);
+}
+
+#imagecard {
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.card {
+  justify-content: space-around;
+  margin: 10px;
+  color: white;
+}
+
+.contact-me {
+  display: inline;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+footer {
   width: 100%;
-  margin: 0px;
-  height: 260px;
-  border-radius: 100px;
-  background-color: black;
-  border: 5px solid var(--borderColor);
-  color: var(--color);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: black;
 }
 
-ul {
-  list-style: none;
-  padding: 0%;
-}
-
-li {
- display: inline-flex;
- margin-right: 80px;
-  font-size: 25px;
+@media screen and (max-width: 400px) {
+  .card {
+    width: 80vw;
+  }
 }
