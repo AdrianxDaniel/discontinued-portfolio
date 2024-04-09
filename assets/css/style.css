@@ -7,10 +7,23 @@ HASHTAGS (#) are for ID's
 
 * {
   box-sizing: border-box;
+  font-family: Calibri;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#top {
+  background: linear-gradient(black, silver);
+}
+
+#about-me {
+  background: linear-gradient(silver, white, white, silver, black);
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
@@ -21,20 +34,22 @@ main {
   justify-content: center;
 }
 
-.btn {
-  background-color: silver;
+.hero-btn {
+  background-color: black;
+  color: orangered;
+  border: 1px solid silver;
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: silver;
+  color: white;
+  border: 1px solid orangered;
 }
 
-hr {
-  color: silver;
-}
 
-main {
-  background: linear-gradient(black, silver);
+
+.custom-b {
+  background: linear-gradient(black, white, silver);
 }
 
 #imagecard {
@@ -43,6 +58,8 @@ main {
 }
 
 .card {
+  width: 450px;
+  height: 300px;
   justify-content: space-around;
   margin: 10px;
   color: white;
@@ -50,9 +67,10 @@ main {
 
 .contact-me {
   display: inline;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+  margin-left: 15px;
 }
 
 footer {
@@ -60,7 +78,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  color: black;
+  background-color: black;
 }
 
 @media screen and (max-width: 400px) {
