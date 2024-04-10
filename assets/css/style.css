@@ -15,11 +15,11 @@ html {
 }
 
 #top {
-  background: linear-gradient(black, silver);
+  background: linear-gradient(black, silver, white);
 }
 
 #about-me {
-  background: linear-gradient(silver, white, white, silver, black);
+  background: linear-gradient(white, silver, black);
 }
 
 body {
@@ -46,10 +46,8 @@ main {
   border: 1px solid orangered;
 }
 
-
-
 .custom-b {
-  background: linear-gradient(black, white, silver);
+  background: linear-gradient(black, silver, silver, white);
 }
 
 #imagecard {
@@ -77,12 +75,12 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
   background-color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .card {
     width: 80vw;
   }
+
 }
